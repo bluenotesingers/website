@@ -111,6 +111,23 @@ function updateCarousel(pupitre) {
 
       // Set the first item as active
       carouselInner.children().first().addClass("active");
+      $('.carousel .carousel-item').each(function(){
+        var minPerSlide = 3;
+        var next = $(this).next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        
+        for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+      });
     },
     error: function() {
       console.log("Error fetching members data.");
