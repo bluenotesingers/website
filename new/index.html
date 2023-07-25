@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Note Singers</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/carousel.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <!-- Add the Blue Note Singers logo to the navbar -->
+    <a class="navbar-brand" href="#">
+      <img src="logo-mini.svg" alt="Blue Note Singers" height="40" class="d-inline-block align-top">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#home">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#members">Membres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#photos">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#videos">Vidéos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#concerts">Concerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link section-link" href="#contact">Contact</a>
+        </li>
+
+        <!-- Social media links with icons -->
+        <li class="nav-item">
+          <a class="nav-link social-icon" href="https://www.facebook.com/bluenotesingers" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link social-icon" data-toggle="modal" data-target="#youtubeModal" href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- YouTube Modal -->
+  <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="youtubeModalLabel">YouTube - Bientôt Disponible / Coming Soon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Cette fonctionnalité n'est pas encore disponible, mais elle arrivera bientôt !</p>
+          <p>This feature is not yet available, but it is coming soon!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer / Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <div id="home" class="section section-even">
+    <div class="container text-center">
+      <h1>
+        Bienvenue chez les<br>
+        <img src="logo.svg" alt="Blue Note Singers" width="800px" class="img-fluid">
+      </h1>
+
+      <p>
+        <img src="../images/bluenotesingers-bg-blue.png" width="1024px" alt="Logo" class="img-fluid">
+      </p>
+
+      <h3>Le Manhattan Jazz Choir devient les Blue Note Singers !</h3>
+      <p>
+        Après 20 ans d'existence, l'ensemble huninguois se renouvelle avec un nouveau chef de choeur,
+        un nouveau pianiste et de nouveaux chanteurs qui viennent renforcer nos rangs, toujours avec
+        la même envie de partager cette note bleue qui donne toute sa couleur musicale au blues et
+        au jazz !
+      </p>
+      <p><img src="../images/en.png" width="25" alt="Logo EN"></p>
+      <h3>The Manhattan Jazz Choir becomes the Blue Note Singers!</h3>
+      <p>
+        After 20 years of existence,  the Huninguois ensemble is renewed with a new choirmaster,
+        a new pianist, and also new singers who come to reinforce our group, always with the same
+        desire to share this blue note which gives all its musical color to blues and jazz!
+      </p>
+    </div>
+  </div>
+
+  <!-- Members Section -->
+  <div id="members" class="section section-odd">
+    <div class="container">
+      <h2 class="text-center">No talentueux membres</h2>
+      <div class="container text-center my-3">
+        <h5>Les Sopranes</h3>
+        <div class="row mx-auto my-auto">
+          <div id="sopraneCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox"></div>
+            <a class="carousel-control-prev w-auto" href="#sopraneCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#sopraneCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <h5>Les Altos</h3>
+        <div class="row mx-auto my-auto">
+          <div id="altoCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox"></div>
+            <a class="carousel-control-prev w-auto" href="#altoCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#altoCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <h5>Les Ténors</h3>
+        <div class="row mx-auto my-auto">
+          <div id="tenorCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox"></div>
+            <a class="carousel-control-prev w-auto" href="#tenorCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#tenorCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <h5>Les Basses</h3>
+        <div class="row mx-auto my-auto">
+          <div id="basseCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox"></div>
+            <a class="carousel-control-prev w-auto" href="#basseCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#basseCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <h5>Le Chef et les Musiciens</h3>
+        <div class="row mx-auto my-auto">
+          <div id="musicienCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox"></div>
+            <a class="carousel-control-prev w-auto" href="#musiciensCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#musiciensCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photos Section -->
+  <div id="photos" class="section section-even">
+    <h2>Photos</h2>
+    <!-- Add choir photos here -->
+  </div>
+
+  <!-- Videos Section -->
+  <div id="videos" class="section section-odd">
+    <h2>Vidéos</h2>
+    <!-- Add choir videos here -->
+  </div>
+
+  <!-- Concerts Section -->
+  <div id="concerts" class="section section-even">
+    <h2>Nos Prochains Concerts</h2>
+    <!-- Add concert details here -->
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section section-odd">
+    <h2>Nous Contacter</h2>
+    <!-- Add contact form or contact details here -->
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2023 Blue Note Singers. All rights reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS (Popper.js and jQuery are required for some Bootstrap features) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
+

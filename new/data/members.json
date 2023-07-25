@@ -1,0 +1,184 @@
+{
+  "soprane": [
+    {
+      "name": "Soprane 1",
+      "quote": "Sitation soprane 1",
+      "imageSrc": "http://placehold.it/380?text=Soprane%201"
+    },
+    {
+      "name": "Soprane 2",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Soprane%202"
+    },
+    {
+      "name": "Soprane 3",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Soprane%203"
+    },
+    {
+      "name": "Soprane 4",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Soprane%204"
+    },
+    {
+      "name": "Soprane 5",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Soprane%205"
+    },
+    {
+      "name": "Soprane 6",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Soprane%206"
+    }
+  ],
+  "alto": [
+    {
+      "name": "Alto 1",
+      "quote": "Sitation alto 1",
+      "imageSrc": "http://placehold.it/380?text=Alto%201"
+    },
+    {
+      "name": "Alto 2",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Alto%202"
+    },
+    {
+      "name": "Alto 3",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Alto%203"
+    },
+    {
+      "name": "Alto 4",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Alto%204"
+    },
+    {
+      "name": "Alto 5",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Alto%205"
+    },
+    {
+      "name": "Alto 6",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Alto%206"
+    }
+  ],
+  "tenor": [
+    {
+      "name": "Ténor 1",
+      "quote": "Sitation ténor 1",
+      "imageSrc": "http://placehold.it/380?text=Ténor%201"
+    },
+    {
+      "name": "Ténor 2",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%202"
+    },
+    {
+      "name": "Ténor 3",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%203"
+    },
+    {
+      "name": "Ténor 4",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%204"
+    },
+    {
+      "name": "Ténor 5",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%205"
+    },
+    {
+      "name": "Ténor 6",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%206"
+    }
+  ],
+  "tenor": [
+    {
+      "name": "Ténor 1",
+      "quote": "Sitation ténor 1",
+      "imageSrc": "http://placehold.it/380?text=Ténor%201"
+    },
+    {
+      "name": "Ténor 2",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%202"
+    },
+    {
+      "name": "Ténor 3",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%203"
+    },
+    {
+      "name": "Ténor 4",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%204"
+    },
+    {
+      "name": "Ténor 5",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%205"
+    },
+    {
+      "name": "Ténor 6",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Ténor%206"
+    }
+  ],
+  "basse": [
+    {
+      "name": "Basse 1",
+      "quote": "Sitation basse 1",
+      "imageSrc": "http://placehold.it/380?text=Basse%201"
+    },
+    {
+      "name": "Basse 2",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Basse%202"
+    },
+    {
+      "name": "Basse 3",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Basse%203"
+    },
+    {
+      "name": "Basse 4",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Basse%204"
+    },
+    {
+      "name": "Basse 5",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Basse%205"
+    },
+    {
+      "name": "Basse 6",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Basse%206"
+    }
+  ],
+  "musicien": [
+    {
+      "name": "Nikos (chef)",
+      "quote": "Sitation Nikos",
+      "imageSrc": "http://placehold.it/380?text=Nikos"
+    },
+    {
+      "name": "Fred (batteur)",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Fred"
+    },
+    {
+      "name": "Peter (bassiste)",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=Peter"
+    },
+    {
+      "name": "??? (pianiste)",
+      "quote": "...",
+      "imageSrc": "http://placehold.it/380?text=???"
+    }
+}
+
