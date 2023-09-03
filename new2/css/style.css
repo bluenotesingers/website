@@ -1,0 +1,144 @@
+:root {
+    --color-lightblue: 232, 249, 255;
+    --color-darkblue: 28, 58, 189;
+}
+
+a.navbar-brand > span {
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    padding-left: 20px;
+    vertical-align: middle
+}
+
+a.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease !important;
+    color: white;
+}
+
+ul.social-icon li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}   
+    
+@media (min-width: 992px) {
+    ul.social-icon li {
+        flex-direction: row !important;
+        /*display: none !important;*/
+    }
+}
+
+a.social-icon:hover {
+    color: rgba(var(--color-lightblue), 0.5) !important;
+}
+
+.navbar-custom {
+    background-color:rgb(var(--color-darkblue));
+}
+ 
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text{
+    color:rgb(var(--color-lightblue))
+}
+
+body {
+    background-color: rgb(var(--color-lightblue));
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}   
+
+.nav-link {
+    color: rgb(var(--color-lightblue));
+    border-radius: 10px;
+}
+
+.nav-link.active {
+    color: rgb(var(--color-darkblue)) !important;
+    background-color: rgb(var(--color-lightblue));
+}
+
+h1 {
+    font-size: 80px;
+    text-shadow: 8px 8px 8px rgba(var(--color-darkblue), 0.5);
+    padding-top: 80px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;;
+    text-shadow: 5px 5px 5px rgba(var(--color-darkblue), 0.5);
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;;
+    text-shadow: 3px 3px 3px rgba(var(--color-darkblue), 0.5);
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.hr {
+    text-align: center;
+    color: rgb(var(--color-darkblue))
+}
+  
+.hr  span {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.hr .outer-line {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40%;
+    border-bottom: 1px solid rgb(var(--color-darkblue));
+}
+
+.carousel-inner {
+    box-shadow: 6px 7px 12px 0px;
+    /*max-height: 90vh;*/
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0
+}
+
+.carousel-item, .carousel-item img {
+    width: 100%;
+    aspect-ratio: auto
+}
+
+/* CSS for the video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (adjust as needed) */
+    height: 0;
+    overflow: hidden;
+}   
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

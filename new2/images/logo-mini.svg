@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="60" viewBox="0 0 75 60">
+
+  <rect x="-40" y="0" width="150" height="60" rx="8" ry="8" fill="white" opacity="0.8" />
+
+  <!-- Group for Blue -->
+  <g transform="translate(-30, 20)">
+    <!-- Random Blue Circle for B -->
+    <circle cx="25" cy="10" r="25" fill="#007BFF" />
+    <!-- White Letter B -->
+    <text x="15" y="20" font-weight="bold" font-family="Arial" font-size="30" fill="white">B</text>
+  </g>
+
+  <!-- Group for Note -->
+  <g transform="translate(10, 20)">
+    <!-- Random Blue Circle for Note -->
+    <circle cx="25" cy="10" r="25" fill="#005EAE" />
+    <!-- White Letter N -->
+    <text x="15" y="20" font-weight="bold" font-family="Arial" font-size="30" fill="white">N</text>
+  </g>
+
+  <!-- Group for Singers -->
+  <g transform="translate(50, 20)">
+    <!-- Random Blue Circle for Singers -->
+    <circle cx="25" cy="10" r="25" fill="#0066C7" />
+    <!-- White Letter S -->
+    <text x="15" y="20" font-weight="bold" font-family="Arial" font-size="30" fill="white">S</text>
+  </g>
+</svg>
+
