@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Blue Note Singers - Chorale jazz cosmopolite</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Note Singers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- icon -->
-    <link rel="icon" href="images/logo.png" />
-    <!-- fonts -->
-    <!-- bootstrap -->
-    <!-- additional styles -->
-    <link rel="stylesheet" href="site.css">
-  </head>
-  <body>
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .header img {
+            max-width: 300px;
+            background-color: #f9f9f9;
+        }
+        .content {
+            margin: 20px;
+        }
+        .content h1, .content h2 {
+            color: #0056b3;
+        }
+        .concert-photos {
+            margin: 20px 0;
+        }
+        .concert-photos img {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid #0056b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .translate-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            width: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <h1>
-        Bienvenue au Blue Note Singers, un groupe de choriste jazz cosmopolite
-      </h1>
+        <div class="header">
+            <img src="images/logo.svg" alt="Blue Note Singers Logo">
+        </div>
+        <img src="images/translate.jpg" alt="Translate" class="translate-btn" id="translate-btn">
+        <div class="content">
+            <h1 id="title">Bienvenue au Blue Note Singers</h1>
+            <p id="description">Un groupe de choristes jazz cosmopolite</p>
 
-      <h2>Un peu d’histoire…</h2>
-      <p>
-        Après 20 ans d’existence sous le nom de Manhattan Jazz Choir, l’ensemble Huninguois se renouvelle.
-        En 2023, il devient les <b>Blue Note Singers</b> avec un nouveau chef de chœur, un nouveau pianiste et de
-        nouveaux chanteurs pour renforcer nos rangs.
-      </p>
-      <h2>Du jazz mais pas que…</h2>
-      <p>
-        Les Blue Note Singers veulent continuer de partager la musique et les chants (Anglo-Saxons) de jazz
-        avec un répertoire élargi de latino, de swing, de blues… avec, à chaque fois, cette « Blue Note » qui
-        donne toute sa couleur musicale au blues et au jazz.
-      </p>
-      <h2>Et cette note bleue, alors ?</h2>
-      <p>
-        Cette « Blue Note » est née de la confrontation des noirs américains avec le système musical
-        européen et a donné une sonorité, une couleur musicale toute particulière au blues puis au jazz.
-        Cette note permet à chacun d’assimiler la musique différemment selon la façon qu’elle a de ressentir
-        la musique.
-      </p>
-      <h2>Les choristes.</h2>
-      <p>
-        La chorale est composée de 23 choristes amateurs de tous horizons et de tous âges, répartis sur
-        quatre pupitres (Soprano, Alto, Ténor, Basse), pour des harmonisations allant de 3 à 6 voix.<br/>
-        Lors des concerts, le chœur est accompagné de musiciens : une guitare basse, une batterie et un
-        piano.
-      </p>
-      <h2>Et si tu veux te joindre à nous…</h2>
-      <p>
-        Les répétitions se déroulent tous les mardis soir de 20h00 À 22h00 au 6 rue des Boulangers à
-        Huningue (Dans le bâtiment du musée, à côté de la Poste, place Abbatucci,
-        contact@bluenotesingers.fr).<br/>
-        Aucune formation musicale n’est exigée pour faire partie du groupe.<br/>
-        Néanmoins la chorale, bien qu’amatrice, est dans une recherche constante de progrès au niveau
-        vocale. On tend vers une homogénéité du chœur et une justesse vocale. L’ambiance chaleureuse de
-        nos répétitions n’exclut pas une grande assiduité, une bonne implication pendant les répétitions et
-        un minimum de travail personnel.
-      </p>
+            <h2 id="history-title">Un peu d’histoire…</h2>
+            <p id="history">Après 20 ans d’existence sous le nom de Manhattan Jazz Choir, l’ensemble Huninguois se renouvelle. En 2023, il devient les Blue Note Singers avec un nouveau chef de chœur, un nouveau pianiste et de nouveaux chanteurs pour renforcer nos rangs.</p>
 
-      <p style="text-align:center"><img src="images/en.png" width="25" alt="Logo"></p>
+            <h2 id="music-title">Du jazz mais pas que…</h2>
+            <p id="music-description">Les Blue Note Singers veulent continuer de partager la musique et les chants (Anglo-Saxons) de jazz avec un répertoire élargi de latino, de swing, de blues… avec, à chaque fois, cette « Blue Note » qui donne toute sa couleur musicale au blues et au jazz.</p>
 
-      <h1>
-        Introducing Blue Note Singers, a cosmopolitan jazz choir
-      </h1>
+            <h2 id="blue-note-title">Et cette note bleue, alors ?</h2>
+            <p id="blue-note-description">Cette « Blue Note » est née de la confrontation des noirs américains avec le système musical européen et a donné une sonorité, une couleur musicale toute particulière au blues puis au jazz. Cette note permet à chacun d’assimiler la musique différemment selon la façon qu’elle a de ressentir la musique.</p>
 
-      <h2>Some background…</h2>
-      <p>
-        After 20 years of existence under the name of the Manhattan Jazz Choir, our choir, based in
-        Huningue (France) has a new name. Indeed, in 2023 our name has become <b>Blue Note Singers</b> with a
-        new choir director, a new pianist and new singers to strengthen our ranks.
-      </p>
-      <h2>It’s not just Jazz…</h2>
-      <p>
-        The Blue Note Singers repertoire consists of Anglo-Saxon jazz music and songs with an expanded
-        repertoire of Latino, Swing, Blues, Pop… with, each time, this &quot;Blue Note&quot; which gives all its musical
-        colour to blues and jazz.
-      </p>
+            <h2 id="choristers-title">Les choristes</h2>
+            <p id="choristers">La chorale est composée de 23 choristes amateurs de tous horizons et de tous âges, répartis sur quatre pupitres (Soprano, Alto, Ténor, Basse), pour des harmonisations allant de 3 à 6 voix. Lors des concerts, le chœur est accompagné de musiciens : une guitare basse, une batterie et un piano.</p>
 
-      <h2>So, what does the term ‘Blue Note’ stand for?</h2>
-      <p>
-        The term &quot;Blue Note&quot; originates from the encounter between American black music and European
-        music and gave rise to a very particular musical colour to both blues and jazz. It creates a sense of
-        deep (blue) emotions and adds emotional intensity to the music
-      </p>
-      <h2>The choir…</h2>
-      <p>
-        Our choir is composed of about 25 amateur singers and a musical director with different
-        backgrounds, nationalities and ages, representing four voice types (Soprano, Alto, Tenor, Bass), in
-        order to produce musical harmonies ranging from 3 to 6 voices.<br/>
-        During public performances the choir is accompanied by three musicians: a base-guitarist, a
-        percussionist and a pianist.
-      </p>
-      <h2>In case you’d you want to join us…</h2>
-      <p>
-        Rehearsals take place every Tuesday evening from 8:00 p.m. to 10:00 p.m. at 6 rue des Boulangers in
-        Huningue, in the museum building, next to the Post Office, Place Abbatucci
-        (contact@bluenotesingers.fr).<br/>
-        No specific musical training is required to become part of the choir.<br/>
-        Nevertheless, the choir although amateur, is in a constant quest for vocal excellence. We aim for
-        collective homogeneity and vocal accuracy. The relaxed and welcoming atmosphere of our rehearsals
-        promote great attendance as well as individual commitment to the choir. Dependent on your
-        personal singing experience, some minimal individual musical work may be required.
-      </p>
+            <h2 id="join-us-title">Et si tu veux te joindre à nous…</h2>
+            <p id="join-us">Les répétitions se déroulent tous les mardis soir de 20h00 à 22h00 au 6 rue des Boulangers à Huningue (Dans le bâtiment du musée, à côté de la Poste, place Abbatucci, contact@bluenotesingers.fr). Aucune formation musicale n’est exigée pour faire partie du groupe. Néanmoins la chorale, bien qu’amatrice, est dans une recherche constante de progrès au niveau vocal. On tend vers une homogénéité du chœur et une justesse vocale. L’ambiance chaleureuse de nos répétitions n’exclut pas une grande assiduité, une bonne implication pendant les répétitions et un minimum de travail personnel.</p>
+        </div>
+        <div class="concert-photos">
+            <div class="row">
+                <div class="col-md-4"><img src="images/concert/concert1.jpg" alt="Concert 1"></div>
+                <div class="col-md-4"><img src="images/concert/concert2.jpg" alt="Concert 2"></div>
+                <div class="col-md-4"><img src="images/concert/concert3.jpg" alt="Concert 3"></div>
+                <div class="col-md-4"><img src="images/concert/concert4.jpg" alt="Concert 4"></div>
+                <div class="col-md-4"><img src="images/concert/concert5.jpg" alt="Concert 5"></div>
+                <div class="col-md-4"><img src="images/concert/concert6.jpg" alt="Concert 6"></div>
+                <div class="col-md-4"><img src="images/concert/concert7.jpg" alt="Concert 7"></div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#translate-btn').click(function() {
+                let isFrench = $('#title').text() === 'Bienvenue au Blue Note Singers';
+
+                if (isFrench) {
+                    $('#title').text('Welcome to Blue Note Singers');
+                    $('#description').text('A cosmopolitan jazz choir group');
+
+                    $('#history-title').text('A bit of history...');
+                    $('#history').text('After 20 years of existence under the name Manhattan Jazz Choir, the Huninguois ensemble is renewing itself. In 2023, it becomes the Blue Note Singers with a new choir director, a new pianist and new singers to strengthen our ranks.');
+
+                    $('#music-title').text('Jazz but not only...');
+                    $('#music-description').text('The Blue Note Singers want to continue sharing jazz music and songs (Anglo-Saxon) with an expanded repertoire of Latin, swing, blues... with, each time, this "Blue Note" which gives all its musical color to blues and jazz.');
+
+                    $('#blue-note-title').text('And this blue note, then?');
+                    $('#blue-note-description').text('This "Blue Note" was born from the confrontation of African Americans with the European musical system and gave a sound, a very particular musical color to blues then jazz. This note allows everyone to assimilate music differently depending on how they feel the music.');
+
+                    $('#choristers-title').text('The choristers');
+                    $('#choristers').text('The choir is composed of 23 amateur choristers from all backgrounds and ages, divided into four sections (Soprano, Alto, Tenor, Bass), for harmonizations ranging from 3 to 6 voices. During concerts, the choir is accompanied by musicians: a bass guitar, a drum and a piano.');
+
+                    $('#join-us-title').text('And if you want to join us...');
+                    $('#join-us').text('Rehearsals take place every Tuesday evening from 8:00 p.m. to 10:00 p.m. at 6 rue des Boulangers in Huningue (In the museum building, next to the Post Office, place Abbatucci, contact@bluenotesingers.fr). No musical training is required to be part of the group. However, the choir, although amateur, is in constant search of vocal progress. We strive for a homogeneous choir and vocal accuracy. The warm atmosphere of our rehearsals does not exclude great attendance, good involvement during rehearsals and a minimum of personal work.');
+                } else {
+                    $('#title').text('Bienvenue au Blue Note Singers');
+                    $('#description').text('Un groupe de choristes jazz cosmopolite');
+
+                    $('#history-title').text('Un peu d’histoire…');
+                    $('#history').text('Après 20 ans d’existence sous le nom de Manhattan Jazz Choir, l’ensemble Huninguois se renouvelle. En 2023, il devient les Blue Note Singers avec un nouveau chef de chœur, un nouveau pianiste et de nouveaux chanteurs pour renforcer nos rangs.');
+
+                    $('#music-title').text('Du jazz mais pas que…');
+                    $('#music-description').text('Les Blue Note Singers veulent continuer de partager la musique et les chants (Anglo-Saxons) de jazz avec un répertoire élargi de latino, de swing, de blues… avec, à chaque fois, cette « Blue Note » qui donne toute sa couleur musicale au blues et au jazz.');
+
+                    $('#blue-note-title').text('Et cette note bleue, alors ?');
+                    $('#blue-note-description').text('Cette « Blue Note » est née de la confrontation des noirs américains avec le système musical européen et a donné une sonorité, une couleur musicale toute particulière au blues puis au jazz. Cette note permet à chacun d’assimiler la musique différemment selon la façon qu’elle a de ressentir la musique.');
+
+                    $('#choristers-title').text('Les choristes');
+                    $('#choristers').text('La chorale est composée de 23 choristes amateurs de tous horizons et de tous âges, répartis sur quatre pupitres (Soprano, Alto, Ténor, Basse), pour des harmonisations allant de 3 à 6 voix. Lors des concerts, le chœur est accompagné de musiciens : une guitare basse, une batterie et un piano.');
+
+                    $('#join-us-title').text('Et si tu veux te joindre à nous…');
+                    $('#join-us').text('Les répétitions se déroulent tous les mardis soir de 20h00 à 22h00 au 6 rue des Boulangers à Huningue (Dans le bâtiment du musée, à côté de la Poste, place Abbatucci, contact@bluenotesingers.fr). Aucune formation musicale n’est exigée pour faire partie du groupe. Néanmoins la chorale, bien qu’amatrice, est dans une recherche constante de progrès au niveau vocal. On tend vers une homogénéité du chœur et une justesse vocale. L’ambiance chaleureuse de nos répétitions n’exclut pas une grande assiduité, une bonne implication pendant les répétitions et un minimum de travail personnel.');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
